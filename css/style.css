@@ -269,14 +269,14 @@ button.btn:hover {
      color: rgba(16, 17, 22, 255);
 }
 
-label::before {
+.accordion label::before {
      content: "+";
      margin-right: 10px;
      font-size: 24px;
      font-weight: 600;
 }
 
-input[type="checkbox"] {
+.accordion input[type="checkbox"] {
      display: none;
 }
 
