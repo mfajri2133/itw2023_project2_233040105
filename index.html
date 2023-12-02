@@ -6,7 +6,238 @@
                name="viewport"
                content="width=device-width, initial-scale=1.0"
           />
-          <title>Dhiya Motor</title>
+          <title>DHIYA MOTOR</title>
+
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+               integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+               crossorigin="anonymous"
+               referrerpolicy="no-referrer"
+          />
+
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+               href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600&family=Poppins:wght@200;300;400;500;700&display=swap"
+               rel="stylesheet"
+          />
+
+          <link rel="stylesheet" href="css/style.css" />
+          <link rel="stylesheet" href="css/navbar.css" />
+          <link rel="stylesheet" href="css/footer.css" />
      </head>
-     <body></body>
+
+     <body>
+          <nav>
+               <div class="navbar">
+                    <div class="logo">
+                         <a href="index.html">
+                              <img src="img/logo-only.png" /> DHIYA MOTOR 67</a
+                         >
+                    </div>
+
+                    <ul class="links">
+                         <li><a href="#home">BERANDA</a></li>
+                         <li><a href="#about">TENTANG</a></li>
+                         <li><a href="#services">LAYANAN</a></li>
+                         <li><a href="#contact">KONTAK</a></li>
+                         <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+
+                    <div class="toggle">
+                         <i class="fas fa-bars-staggered"></i>
+                    </div>
+               </div>
+
+               <div class="dropdown-menu">
+                    <li><a href="index.html">BERANDA</a></li>
+                    <li><a href="#about">TENTANG</a></li>
+                    <li><a href="#services">LAYANAN</a></li>
+                    <li><a href="#contact">KONTAK</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+               </div>
+          </nav>
+
+          <a id="button"></a>
+
+          <section class="hero" id="home">
+               <main class="content">
+                    <h1>Temukan Mobil Impianmu Disini.</h1>
+                    <p>
+                         <span>Dhiya Motor</span> hadir untuk membantu anda
+                         menemukan mobil impian, dengan metode pembayaran cash
+                         ataupun credit.
+                    </p>
+               </main>
+          </section>
+
+          <section
+               class="about"
+               id="about"
+               style="background-color: rgb(16, 17, 22)"
+          >
+               <h2>Tentang</h2>
+
+               <div class="container">
+                    <p>
+                         Selamat datang di Dhiya Motor. Tempat dimana kualitas
+                         dan pelayanan bertemu untuk memberikan pengalaman
+                         belanja mobil bekas yang luar biasa. Kami menyadari
+                         bahwa setiap pembelian mobil adalah keputusan penting,
+                         dan itulah mengapa kami berkomitmen untuk menyediakan
+                         berbagai pilihan kendaraan berkualitas tinggi.
+                         <br /><br />
+                         Tim profesional kami selalu siap memberikan pelayanan
+                         ramah dan informatif kepada setiap pelanggan. Kami
+                         percaya bahwa kepuasan pelanggan adalah hal yang sangat
+                         penting. Oleh karena itu, tidak hanya menyediakan mobil
+                         bekas yang telah melalui proses pengecekan ketat,
+                         tetapi juga menciptakan lingkungan yang memiliki
+                         transparansi dan kepercayaan sebagai prioritas utama.
+                         <br /><br />
+
+                         Terima kasih atas kepercayaan Anda kepada kami.
+                    </p>
+               </div>
+          </section>
+
+          <section class="service" id="services">
+               <h2>Layanan</h2>
+
+               <div class="container">
+                    <div class="card">
+                         <img
+                              src="img/save-money.png"
+                              alt="save-money"
+                              class="card-img-top"
+                         />
+                         <div class="card-body">
+                              <h5 class="card-title">Harga Termurah</h5>
+                         </div>
+                    </div>
+
+                    <div class="card">
+                         <img
+                              src="img/engine.png"
+                              alt="engine"
+                              class="card-img-top"
+                         />
+                         <div class="card-body">
+                              <h5 class="card-title">Mesin Terawat</h5>
+                         </div>
+                    </div>
+
+                    <div class="card">
+                         <img
+                              src="img/car.png"
+                              alt="car"
+                              class="card-img-top"
+                         />
+                         <div class="card-body">
+                              <h5 class="card-title">Mobil Berkualitas</h5>
+                         </div>
+                    </div>
+
+                    <div class="card">
+                         <img
+                              src="img/speedometer.png"
+                              alt="speedometer"
+                              class="card-img-top"
+                         />
+                         <div class="card-body">
+                              <h5 class="card-title">Kilometer Rendah</h5>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <section class="contact" id="contact">
+               <h2>Kontak</h2>
+
+               <div class="container">
+                    <iframe
+                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.8307646949097!2d107.43893277462256!3d-6.543043363962993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e690f040e8876e3%3A0x76835a84f7f0a062!2sDHIYA%20MOTOR%2067!5e0!3m2!1sid!2sid!4v1701359413767!5m2!1sid!2sid"
+                         width="580"
+                         height="400"
+                         style="border: 0"
+                         allowfullscreen=""
+                         loading="lazy"
+                         referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+
+                    <form action="" class="contact-form">
+                         <div class="input-group">
+                              <label for="">Nama</label>
+                              <input
+                                   type="text"
+                                   placeholder="Masukan nama anda disini"
+                              />
+                         </div>
+                         <div class="input-group">
+                              <label for="">Judul</label>
+                              <input
+                                   type="text"
+                                   placeholder="Masukan judul pesan"
+                              />
+                         </div>
+                         <div class="input-group">
+                              <label for="">Pesan</label>
+                              <textarea
+                                   id="w3review"
+                                   placeholder="Masukan pesan"
+                                   rows="4"
+                                   cols="50"
+                              ></textarea>
+                         </div>
+                         <button class="btn">Kirim</button>
+                    </form>
+               </div>
+          </section>
+
+          <footer>
+               <div class="container">
+                    <div class="contact-footer">
+                         <span>Hubungi Kami Melalui:</span>
+                         <ul class="info">
+                              <li>
+                                   <a href="tel:628170270073">
+                                        <i class="fa-solid fa-phone"></i
+                                   ></a>
+                              </li>
+                              <li>
+                                   <a
+                                        href="https://wa.me/628170270073?text=Halo,%20saya%20tertarik%20untuk%20membeli%20mobil%20Anda."
+                                   >
+                                        <i class="fa-brands fa-whatsapp"></i
+                                   ></a>
+                              </li>
+                              <li>
+                                   <a
+                                        href="https://www.instagram.com/dhiya_motor_purwakarta/"
+                                   >
+                                        <i class="fa-brands fa-instagram"></i
+                                   ></a>
+                              </li>
+                              <li>
+                                   <a
+                                        href="https://www.facebook.com/herscott.herie?mibextid=3JLxgoXK8XkhKqoE"
+                                   >
+                                        <i class="fa-brands fa-facebook-f"></i
+                                   ></a>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+
+               <hr />
+
+               <section class="copyright">
+                    © 2023 Copyright:
+                    <a href="https://github.com/mfajri2133">FWeb</a>
+               </section>
+          </footer>
+
+          <script src="js/script.js"></script>
+     </body>
 </html>
