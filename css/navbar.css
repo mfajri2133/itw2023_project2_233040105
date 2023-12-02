@@ -70,6 +70,17 @@ nav {
      display: none;
 }
 
+.btn-wa {
+     background-color: #25d366;
+     color: #f5f5ff;
+     padding: 0.5rem 1rem;
+     outline: none;
+     border-radius: 20px;
+     font-size: 0.8rem;
+     font-weight: bold;
+     cursor: pointer;
+}
+
 /* Dropdown Responsive */
 .dropdown-menu {
      display: none;
@@ -97,9 +108,16 @@ nav {
      text-shadow: 0 4px 10px black;
 }
 
+.dropdown-menu .btn-wa {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+}
+
 /* Responsive Navbar */
 @media (max-width: 992px) {
-     .navbar .links {
+     .navbar .links,
+     .navbar .btn-wa {
           display: none;
      }
 
