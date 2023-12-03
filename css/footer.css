@@ -20,14 +20,15 @@ footer .container .contact-footer span {
      margin-right: auto;
 }
 
-footer .container .contact-footer .info {
+footer .container .contact-footer .footer-links {
      display: flex;
      gap: 20px;
      justify-content: flex-end;
 }
 
-footer .container .contact-footer .info a {
+footer .container .contact-footer .footer-links a {
      font-size: 18px;
+     align-items: center;
 }
 
 footer .copyright {
@@ -43,7 +44,7 @@ footer .copyright a:hover {
      color: #007bff;
 }
 
-footer .container .contact-footer .info a:hover i {
+footer .container .contact-footer .footer-links a:hover i {
      color: #007bff;
 }
 
@@ -58,12 +59,18 @@ footer .container .contact-footer .info a:hover i {
           justify-content: center;
      }
 
-     footer .container .contact-footer .info {
+     footer .container .contact-footer .footer-links {
           justify-content: center;
           gap: 15px;
      }
 
      footer .container .contact-footer span {
           display: none;
+     }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+     footer {
+          padding: 0 10px;
      }
 }
