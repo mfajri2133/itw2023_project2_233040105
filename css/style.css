@@ -167,25 +167,24 @@ hr {
      font-weight: 500;
 }
 
-.form {
-     grid-area: form;
-}
-
-.info {
-     grid-area: info;
-}
-
-.map {
-     grid-area: map;
-}
-
 .contact {
      padding: 40px;
      background: #f5f5f5;
-     box-shadow: 0 5px 25px grey;
 }
 
-.box {
+.contact.form {
+     grid-area: form;
+}
+
+.contact.info {
+     grid-area: info;
+}
+
+.contact.map {
+     grid-area: map;
+}
+
+.contactUs .container {
      position: relative;
      display: grid;
      grid-template-columns: 2fr 1fr;
@@ -202,12 +201,12 @@ hr {
      margin-bottom: 10px;
 }
 
-.form-group {
+.contact.form form .form-group {
      position: relative;
      width: 100%;
 }
 
-.form-group .row {
+.contact.form form .form-group .row {
      display: flex;
      gap: 20px;
 }
@@ -219,7 +218,7 @@ hr {
      width: 50%;
 }
 
-.form-group .row100 .input-section {
+.contact.form form .form-group .row100 .input-section {
      width: 100%;
 }
 
@@ -258,21 +257,21 @@ hr {
      color: #999;
 }
 
-.info {
+.contact.info {
      background: #007bff;
 }
 
-.info h3 {
+.contact.info h3 {
      color: #f5f5f5;
 }
 
-.info .info-group .info-section {
+.contact.info .info-group .info-section {
      display: flex;
      align-items: center;
      margin-bottom: 10px;
 }
 
-.info .info-group .info-section span {
+.contact.info .info-group .info-section span {
      min-width: 40px;
      height: 40px;
      background-color: #f5f5f5;
@@ -284,25 +283,16 @@ hr {
      font-size: 1.5rem;
 }
 
-.info .info-group .info-section span ion-icon {
+.contact.info .info-group .info-section span ion-icon {
      color: rgba(16, 17, 22, 255);
 }
 
-.social-media {
-     margin-top: 40px;
-     display: flex;
+.contact.info .info-group a:hover span {
+     background-color: rgba(16, 17, 22, 255);
 }
 
-.social-media li {
-     margin-right: 15px;
-}
-
-.social-media li a {
-     font-size: 1.6rem;
-}
-
-.social-media li a:hover ion-icon {
-     color: rgba(16, 17, 22, 255);
+.contact.info .info-group a:hover span ion-icon {
+     color: #f5f5f5;
 }
 
 .map {
@@ -473,13 +463,18 @@ hr {
 
      .contactUs {
           padding: 3rem 2rem;
+          max-width: 100%;
      }
 
-     .contact h2 {
+     .contactUs h2 {
           font-size: 2.2rem;
      }
 
-     .box {
+     .contact {
+          padding: 20px;
+     }
+
+     .contactUs .container {
           grid-template-columns: 1fr;
           grid-template-rows: auto;
           grid-template-areas:
@@ -488,7 +483,7 @@ hr {
                "map";
      }
 
-     .form-group .row {
+     .contact.form form .form-group .row {
           display: flex;
           gap: 0;
           flex-direction: column;
@@ -543,7 +538,7 @@ hr {
           padding: 3rem 2rem;
      }
 
-     .box {
+     .contactUs .container {
           grid-template-columns: 1fr;
           grid-template-rows: auto;
           grid-template-areas:
@@ -568,11 +563,5 @@ hr {
 
      .accordion li {
           margin: 10px 0;
-     }
-}
-
-@media (min-width: 768px) and (max-width: 1366px) {
-     .contactUs {
-          padding: 3rem 2rem;
      }
 }
