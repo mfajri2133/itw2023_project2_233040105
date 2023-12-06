@@ -192,7 +192,7 @@
                     data-aos-duration="1500"
                >
                     <div class="contact form">
-                         <h3>Kirim Pesan</h3>
+                         <h3>Kirim Pesan Melalui Whatsapp</h3>
                          <form>
                               <div class="form-group">
                                    <div class="row100">
@@ -200,14 +200,18 @@
                                              <span>Nama</span>
                                              <input
                                                   type="text"
+                                                  id="name"
                                                   placeholder="John"
+                                                  required
                                              />
                                         </div>
                                         <div class="input-section">
-                                             <span>Email</span>
+                                             <span>No Whatsapp</span>
                                              <input
-                                                  type="email"
-                                                  placeholder="example@email.com"
+                                                  type="tel"
+                                                  id="phone"
+                                                  placeholder="+6281111111111"
+                                                  required
                                              />
                                         </div>
                                    </div>
@@ -216,16 +220,20 @@
                                         <div class="input-section">
                                              <span>Pesan</span>
                                              <textarea
-                                                  type="email"
+                                                  id="message"
                                                   placeholder="Masukan pesan anda disini...."
+                                                  required
                                              ></textarea>
                                         </div>
                                    </div>
 
-                                   <div class="row100">
-                                        <div class="input-section">
-                                             <button disabled>Kirim</button>
-                                        </div>
+                                   <div class="input-section">
+                                        <button
+                                             type="submit"
+                                             onclick="sendMessage()"
+                                        >
+                                             Kirim
+                                        </button>
                                    </div>
                               </div>
                          </form>
