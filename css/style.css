@@ -77,6 +77,20 @@ hr {
      color: white;
 }
 
+.hero .content button {
+     margin-top: 2rem;
+     font-weight: 600;
+     padding: 16px 20px;
+     border: 0px;
+     background-color: #007bff;
+     cursor: pointer;
+}
+
+.hero .content button:hover {
+     background-color: #f5f5f5;
+     color: #007bff;
+}
+
 .about {
      background-color: rgba(16, 17, 22, 255);
      height: fit-content;
@@ -127,11 +141,11 @@ hr {
      border-radius: 8px;
      overflow: hidden;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-     transition: transform 0.3s;
+     transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
-     transform: scale(1.05);
+     transform: translateY(-10px);
 }
 
 .card img {
