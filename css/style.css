@@ -220,11 +220,6 @@ hr {
      width: 100%;
 }
 
-.contact.form form .form-group .row {
-     display: flex;
-     gap: 20px;
-}
-
 .input-section {
      display: flex;
      flex-direction: column;
@@ -253,7 +248,7 @@ hr {
      outline: none;
      border: 1px solid #333;
      resize: none;
-     min-height: 220px;
+     min-height: 330px;
      margin-bottom: 10px;
 }
 
@@ -516,12 +511,6 @@ textarea {
                "map";
      }
 
-     .contact.form form .form-group .row {
-          display: flex;
-          gap: 0;
-          flex-direction: column;
-     }
-
      .input-section {
           width: 100%;
      }
@@ -530,6 +519,12 @@ textarea {
           resize: none;
           min-height: 120px;
           margin-bottom: 10px;
+     }
+
+     .map {
+          min-height: 250px;
+
+          padding: 0;
      }
 
      .faq {
