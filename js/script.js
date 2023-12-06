@@ -48,15 +48,13 @@ btn.addEventListener("click", (e) => {
 });
 
 function sendMessage() {
-     var waNumber = "+628170270073";
      var name = document.getElementById("name").value;
      var msg = document.getElementById("message").value;
 
-     var whatsappApiUrl =
-          "https://api.whatsapp.com/send?phone=" +
-          encodeURIComponent(waNumber) +
-          "&text=" +
+     var whatsappUrl =
+          "https://wa.me/628170270073" +
+          "?text=" +
           encodeURIComponent("Halo Dhiya Motor 67, Saya " + name + ", " + msg);
 
-     window.open(whatsappApiUrl);
+     window.open(whatsappUrl);
 }
