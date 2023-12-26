@@ -275,11 +275,6 @@ textarea {
      background-color: grey;
 }
 
-.error-message {
-     color: red;
-     margin-top: 5px;
-}
-
 .input-section ::placeholder {
      color: #999;
 }
@@ -517,6 +512,10 @@ textarea {
           resize: none;
           min-height: 120px;
           margin-bottom: 10px;
+     }
+
+     .input-section p {
+          font-size: 0.7rem;
      }
 
      .map {
