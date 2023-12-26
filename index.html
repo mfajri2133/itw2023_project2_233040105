@@ -8,6 +8,17 @@
           />
           <title>DHIYA MOTOR</title>
 
+          <!-- Owl Carousel -->
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+          />
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+          />
+
+          <!-- Font Awesome -->
           <link
                rel="stylesheet"
                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -30,6 +41,7 @@
                rel="stylesheet"
           />
 
+          <!-- Eksternal CSS -->
           <link rel="stylesheet" href="css/style.css" />
           <link rel="stylesheet" href="css/navbar.css" />
           <link rel="stylesheet" href="css/footer.css" />
@@ -137,47 +149,49 @@
                     data-aos="fade-up"
                     data-aos-duration="1500"
                >
-                    <div class="card">
-                         <img
-                              src="img/Save-money.jpg"
-                              alt="save-money"
-                              class="card-img-top"
-                         />
-                         <div class="card-body">
-                              <h5 class="card-title">Harga Termurah</h5>
+                    <div class="owl-carousel owl-theme">
+                         <div class="card">
+                              <img
+                                   src="img/Save-money.jpg"
+                                   alt="save-money"
+                                   class="card-img-top"
+                              />
+                              <div class="card-body">
+                                   <h5 class="card-title">Harga Termurah</h5>
+                              </div>
                          </div>
-                    </div>
 
-                    <div class="card">
-                         <img
-                              src="img/Engine.jpg"
-                              alt="engine"
-                              class="card-img-top"
-                         />
-                         <div class="card-body">
-                              <h5 class="card-title">Mesin Terawat</h5>
+                         <div class="card">
+                              <img
+                                   src="img/Engine.jpg"
+                                   alt="engine"
+                                   class="card-img-top"
+                              />
+                              <div class="card-body">
+                                   <h5 class="card-title">Mesin Terawat</h5>
+                              </div>
                          </div>
-                    </div>
 
-                    <div class="card">
-                         <img
-                              src="img/Car.jpg"
-                              alt="car"
-                              class="card-img-top"
-                         />
-                         <div class="card-body">
-                              <h5 class="card-title">Mobil Berkualitas</h5>
+                         <div class="card">
+                              <img
+                                   src="img/Car.jpg"
+                                   alt="car"
+                                   class="card-img-top"
+                              />
+                              <div class="card-body">
+                                   <h5 class="card-title">Mobil Berkualitas</h5>
+                              </div>
                          </div>
-                    </div>
 
-                    <div class="card">
-                         <img
-                              src="img/Speedometer.jpg"
-                              alt="speedometer"
-                              class="card-img-top"
-                         />
-                         <div class="card-body">
-                              <h5 class="card-title">Kilometer Rendah</h5>
+                         <div class="card">
+                              <img
+                                   src="img/Speedometer.jpg"
+                                   alt="speedometer"
+                                   class="card-img-top"
+                              />
+                              <div class="card-body">
+                                   <h5 class="card-title">Kilometer Rendah</h5>
+                              </div>
                          </div>
                     </div>
                </div>
@@ -193,10 +207,14 @@
                >
                     <div class="contact form">
                          <h3>Kirim Pesan Melalui Whatsapp</h3>
-                         <form>
+                         <form onsubmit="return false;" id="myForm">
                               <div class="form-group">
                                    <div class="row100">
                                         <div class="input-section">
+                                             <p id="completionMessage">
+                                                  *Lengkapi Form Agar Bisa
+                                                  Mengirim Pesan !!
+                                             </p>
                                              <span>Nama</span>
                                              <input
                                                   type="text"
@@ -213,8 +231,10 @@
                                              ></textarea>
 
                                              <button
-                                                  type="submit"
+                                                  type="button"
                                                   onclick="sendMessage()"
+                                                  id="submitButton"
+                                                  disabled
                                              >
                                                   Kirim
                                              </button>
@@ -353,16 +373,19 @@
                </section>
           </footer>
 
+          <!-- AOS -->
           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
           <script>
                AOS.init();
           </script>
 
+          <!-- Font Awesome -->
           <script
                src="https://kit.fontawesome.com/1adc408adc.js"
                crossorigin="anonymous"
           ></script>
 
+          <!-- ION Icon -->
           <script
                type="module"
                src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -371,6 +394,39 @@
                nomodule
                src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
           ></script>
+
+          <!-- Owl Carousel -->
+          <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+          <script>
+               $(document).ready(function () {
+                    $(".owl-carousel").owlCarousel({
+                         loop: true,
+                         margin: 10,
+                         responsiveClass: true,
+                         responsive: {
+                              0: {
+                                   items: 1,
+                                   nav: false,
+                                   loop: false,
+                                   autoWidth: false,
+                              },
+                              600: {
+                                   items: 2,
+                                   nav: false,
+                                   loop: false,
+                              },
+                              1000: {
+                                   items: 4,
+                                   nav: false,
+                                   loop: false,
+                              },
+                         },
+                    });
+               });
+          </script>
+
+          <!-- Eksternal JS -->
           <script src="js/script.js"></script>
      </body>
 </html>

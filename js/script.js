@@ -47,6 +47,7 @@ btn.addEventListener("click", (e) => {
      });
 });
 
+// Button Kirim Whatsapp
 function sendMessage() {
      var name = document.getElementById("name").value;
      var msg = document.getElementById("message").value;
@@ -58,3 +59,19 @@ function sendMessage() {
 
      window.open(whatsappUrl);
 }
+
+// Validator button ketika formnya kosong
+document.getElementById("myForm").addEventListener("input", function () {
+     var name = document.getElementById("name").value;
+     var message = document.getElementById("message").value;
+     var submitButton = document.getElementById("submitButton");
+     var completionMessage = document.getElementById("completionMessage");
+
+     if (name.trim() !== "" && message.trim() !== "") {
+          submitButton.removeAttribute("disabled");
+          completionMessage.style.display = "none";
+     } else {
+          submitButton.setAttribute("disabled", "disabled");
+          completionMessage.style.display = "block";
+     }
+});

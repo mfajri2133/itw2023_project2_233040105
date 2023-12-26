@@ -128,24 +128,12 @@ hr {
      color: #f5f5f5;
 }
 
-.service .container {
-     display: grid;
-     grid-template-columns: repeat(4, minmax(0, 1fr));
-     gap: 20px;
-     justify-content: center;
-}
-
 .card {
      width: 100%;
      background-color: white;
      border-radius: 8px;
      overflow: hidden;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-     transition: transform 0.3s ease-in-out;
-}
-
-.card:hover {
-     transform: translateY(-10px);
 }
 
 .card img {
@@ -162,6 +150,10 @@ hr {
 .card-title {
      font-size: 1.5rem;
      color: rgba(16, 17, 22, 255);
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+     background-color: #007bff;
 }
 
 .contactUs {
@@ -252,6 +244,11 @@ hr {
      margin-bottom: 10px;
 }
 
+.input-section p {
+     color: red;
+     font-size: 0.8rem;
+}
+
 textarea:focus,
 input:focus {
      color: #007bff;
@@ -263,18 +260,24 @@ textarea {
 }
 
 .input-section button {
-     background-color: rgba(16, 17, 22, 255);
+     background-color: #007bff;
      color: #f5f5f5;
      font-size: 1.1rem;
      max-width: 120px;
      font-weight: 500;
      cursor: pointer;
      padding: 12px 14px;
+     border: 1px solid #000;
 }
 
-.input-section button:hover {
-     background-color: #007bff;
-     color: #f5f5f5;
+#submitButton:disabled {
+     cursor: not-allowed;
+     background-color: grey;
+}
+
+.error-message {
+     color: red;
+     margin-top: 5px;
 }
 
 .input-section ::placeholder {
@@ -480,11 +483,6 @@ textarea {
           font-size: 2.2rem;
      }
 
-     .service .container {
-          display: grid;
-          grid-template-columns: repeat(1, minmax(0, 1fr));
-     }
-
      .card-title {
           font-size: 1.2rem;
      }
@@ -550,12 +548,6 @@ textarea {
 
      .service {
           padding: 3rem 2rem;
-     }
-
-     .service .container {
-          display: grid;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 15px;
      }
 
      .card-title {
