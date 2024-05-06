@@ -12,6 +12,7 @@ toggleBtn.onclick = function () {
           : "fas fa-bars-staggered";
 };
 
+// Accordion
 document.addEventListener("DOMContentLoaded", function () {
      const checkboxes = document.querySelectorAll(
           '.accordion input[type="checkbox"]'
